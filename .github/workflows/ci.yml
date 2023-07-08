@@ -8,16 +8,15 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
-
     - name: Setup Elixir
       uses: erlef/setup-beam@v1
       with:
         elixir-version: 1.15.2
         otp-version: 26.0.2
-
     - name: Install Dependencies
       run: mix deps.get
-
+    - name: Start DB
+      run: docker compose up
     - name: Run Tests
       run: mix test
 
