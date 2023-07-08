@@ -9,6 +9,7 @@ defmodule Outdoor.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
+      test_coverage: [tool: ExCoveralls],
       deps: deps()
     ]
   end
@@ -50,7 +51,8 @@ defmodule Outdoor.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
-      {:plug_cowboy, "~> 2.5"}
+      {:plug_cowboy, "~> 2.5"},
+      {:excoveralls, "~> 0.16.1", only: :test}
     ]
   end
 
