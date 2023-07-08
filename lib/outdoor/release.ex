@@ -1,8 +1,8 @@
 defmodule Outdoor.Release do
-  @moduledoc '''
+  @moduledoc """
   Used for executing DB release tasks when run in production without Mix
   installed.
-  '''
+  """
   @app :outdoor
 
   def migrate do
