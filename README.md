@@ -35,3 +35,9 @@ try accessing it via http://localhost:4000
 ```bash
 mix test
 ```
+
+5. format code
+
+```bash
+mix format
+```
