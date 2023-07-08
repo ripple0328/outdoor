@@ -7,11 +7,9 @@
 # This file is based on these images:
 #
 #   - https://hub.docker.com/r/hexpm/elixir/tags - for the build image
-#   - https://hub.docker.com/_/debian?tab=tags&page=1&name=bullseye-20230522-slim - for the release image
-ARG OTP_VERSION=24.0
+ARG OTP_VERSION=26.0.1
 
-ARG DEBIAN_VERSION=bullseye-20230522-slim
-
+ARG DEBIAN_VERSION=compatible-ubuntu-version
 ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-debian-${DEBIAN_VERSION}"
 ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
 
@@ -84,5 +82,3 @@ ENV MIX_ENV="prod"
 COPY --from=builder --chown=nobody:root /app/_build/${MIX_ENV}/rel/outdoor ./
 
 USER nobody
-
-CMD ["/app/bin/server"]
