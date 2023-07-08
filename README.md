@@ -1,5 +1,4 @@
 [![Build](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml/badge.svg)](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml)
-
 [![codecov](https://codecov.io/gh/ripple0328/outdoor/branch/main/graph/badge.svg?token=TINR4BBPHQ)](https://codecov.io/gh/ripple0328/outdoor)
 
 # Outdoor
