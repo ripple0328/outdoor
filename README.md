@@ -1,4 +1,5 @@
 
+
 # Outdoor
 
 
@@ -18,7 +19,14 @@ docker build -t outdoor-app .
 
 ```bash
 docker run -p 4000:4000 outdoor-app
-```
+
+### Deploying to fly.io
+
+1. Install the fly.io CLI by running `brew install flyctl` on MacOS or `curl -L https://fly.io/install.sh | sh` on Linux.
+2. Login to fly.io by running `flyctl auth login`.
+3. Create a new app on fly.io by running `flyctl apps create`.
+4. Deploy the app by running `flyctl deploy`.
+5. Check the status of the deployment by running `flyctl status`.
 
 ### Running Database Migrations
 
@@ -37,4 +45,3 @@ mix phx.server
 ```
 
 The app will be available at `http://localhost:4000`.
-
