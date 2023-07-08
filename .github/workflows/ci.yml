@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   static-analysis:
+    name: Static Analysis
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
@@ -22,6 +23,7 @@ jobs:
 
   deploy:
     name: Deploy app
+    needs: static-analysis
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
