@@ -1,4 +1,4 @@
-
+[![CI](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml/badge.svg)](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml)
 
 # Outdoor
 
@@ -43,5 +43,3 @@ To start the app locally for development, run the following command:
 ```bash
 mix phx.server
 ```
-
-The app will be available at `http://localhost:4000`.
