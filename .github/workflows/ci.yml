@@ -16,7 +16,7 @@ jobs:
     - name: Install Dependencies
       run: mix deps.get
     - name: Start DB
-      run: docker compose up
+      run: docker compose up &
     - name: Run Tests
       run: mix test
 
