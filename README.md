@@ -1,45 +1,37 @@
-[![CI](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml/badge.svg)](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml)
+[![Build](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml/badge.svg)](https://github.com/ripple0328/outdoor/actions/workflows/ci.yml)
 
 # Outdoor
 
+Outdoor is a application that allow creating and sharing outdoor activities.
 
 ## Getting Started
 
-These instructions will guide you on how to deploy the app using Docker and how to run it locally for development.
+These instructions will guide you on how start the app locally for development
 
-### Deploying with Docker
-
-1. Build the Docker image:
-
+1. Install dependencies
 ```bash
-docker build -t outdoor-app .
+brew bundle
+asdf install
+mix deps.get
 ```
-
-2. Run the Docker container:
-
-```bash
-docker run -p 4000:4000 outdoor-app
-
-### Deploying to fly.io
-
-1. Install the fly.io CLI by running `brew install flyctl` on MacOS or `curl -L https://fly.io/install.sh | sh` on Linux.
-2. Login to fly.io by running `flyctl auth login`.
-3. Create a new app on fly.io by running `flyctl apps create`.
-4. Deploy the app by running `flyctl deploy`.
-5. Check the status of the deployment by running `flyctl status`.
-
-### Running Database Migrations
-
-Run the following command to execute database migrations:
+2. Sart DB, Create and migrate your database
 
 ```bash
+docker compose up
+mix ecto.create
 mix ecto.migrate
 ```
 
-### Running Locally for Development
-
+3. Start the app
 To start the app locally for development, run the following command:
 
 ```bash
 mix phx.server
+```
+try accessing it via http://localhost:4000
+
+4. Run tests
+
+```bash
+mix test
 ```

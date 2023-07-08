@@ -1,0 +1,84 @@
+{
+  "entries": {
+    "brew": {
+      "docker": {
+        "version": "24.0.3",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a",
+              "sha256": "0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a",
+              "sha256": "0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a",
+              "sha256": "0361cec07143b7daffca8c0805adfceed25acc06874cb1f92d6f556bdfca788a"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd",
+              "sha256": "62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd",
+              "sha256": "62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd",
+              "sha256": "62c08f5acf2e664ea940ba5351757bd54407f31b3874f291cfde35e95fe592cd"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:6750e3e24ecb2157d13d527398840572323688a746dca2ebf38e979e4779286e",
+              "sha256": "6750e3e24ecb2157d13d527398840572323688a746dca2ebf38e979e4779286e"
+            }
+          }
+        }
+      },
+      "asdf": {
+        "version": "0.12.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/asdf/blobs/sha256:d96303f7e926935adfbe217ee7f157427cc5877a24894baa59500d6c27c215af",
+              "sha256": "d96303f7e926935adfbe217ee7f157427cc5877a24894baa59500d6c27c215af"
+            }
+          }
+        }
+      }
+    },
+    "cask": {
+      "orbstack": {
+        "version": "0.13.0_1910",
+        "options": {
+          "full_name": "orbstack"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.28-16-g4bbc0af",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.1.0.1.1683849156",
+        "Xcode": "14.3.1",
+        "macOS": "13.4.1"
+      }
+    }
+  }
+}
