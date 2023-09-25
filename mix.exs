@@ -5,7 +5,7 @@ defmodule Outdoor.MixProject do
     [
       app: :outdoor,
       version: "0.1.0",
-      elixir: "~> 1.15.2",
+      elixir: "~> 1.15.6",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
