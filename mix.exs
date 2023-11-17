@@ -5,7 +5,7 @@ defmodule Outdoor.MixProject do
     [
       app: :outdoor,
       version: "0.1.0",
-      elixir: "~> 1.15.6",
+      elixir: "~> 1.15.7",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -40,7 +40,7 @@ defmodule Outdoor.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 3.3"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 0.19.0"},
+      {:phoenix_live_view, "~> 0.20.0"},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.0"},
       {:esbuild, "~> 0.7", runtime: Mix.env() == :dev},
@@ -52,7 +52,7 @@ defmodule Outdoor.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:excoveralls, "~> 0.16.1", only: :test}
+      {:excoveralls, "~> 0.18", only: :test}
     ]
   end
 
