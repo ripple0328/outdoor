@@ -36,3 +36,5 @@ npm-debug.log
 /assets/node_modules/
 .zed
 /.DS_Store
+/priv/.DS_Store
+/priv/static/.DS_Store
